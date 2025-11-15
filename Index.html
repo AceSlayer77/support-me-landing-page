@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support My Project</title>
+    <title>Fuel the Next Big Idea! Don't Waste That Balance!</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
-        .gradient-bg {
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        /* Over-the-top, bright gradient background */
+        .super-gradient-bg {
+            background: linear-gradient(145deg, #ffde59 0%, #ff9933 100%);
         }
         /* Custom styles for button colors */
         .paypal-btn { background-color: #0070ba; }
@@ -20,84 +21,122 @@
         .venmo-btn:hover { background-color: #0077e6; }
         .cashapp-btn { background-color: #00c43c; }
         .cashapp-btn:hover { background-color: #00a833; }
+        
+        /* Neon-like glow for the header */
+        .text-glow {
+            text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 204, 0, 0.7);
+        }
+        
+        /* Dramatic tilt effect on hover */
+        .dramatic-card {
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            transform: perspective(1000px) rotateX(2deg) rotateY(-2deg);
+        }
+        .dramatic-card:hover {
+            transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Subtle animation for the header icon (more energetic) */
+        @keyframes pulse-shake {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05) rotate(1deg); }
+            100% { transform: scale(1) rotate(-1deg); }
+        }
+        .animate-icon {
+            animation: pulse-shake 0.8s ease-in-out infinite alternate;
+        }
     </style>
 </head>
-<body class="gradient-bg flex items-center justify-center min-h-screen p-6">
-    <div class="bg-white w-full max-w-md mx-auto rounded-xl shadow-2xl p-8 md:p-10 text-center overflow-hidden">
+<body class="super-gradient-bg flex items-center justify-center min-h-screen p-6">
+    <div class="bg-white w-full max-w-md mx-auto rounded-3xl border-4 border-yellow-500 dramatic-card shadow-2xl p-8 md:p-10 text-center overflow-hidden">
         
-        <!-- Header -->
+        <!-- Icon and Header (High Energy) -->
         <div class="mb-8">
-            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Support My Work</h1>
-            <p class="text-gray-600 text-base md:text-lg">
-                Have a remaining balance on a gift card? You can use it to send a tip!
+            <div class="flex justify-center mb-4">
+                <!-- SVG Icon for visual interest: Money/Energy -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-20 w-20 text-yellow-600 animate-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path fill-rule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25ZM12.75 6a.75.75 0 0 0-1.5 0v6.75h-4.5a.75.75 0 0 0 0 1.5h4.5v4.5a.75.75 0 0 0 1.5 0v-4.5h4.5a.75.75 0 0 0 0-1.5h-4.5V6Z" clip-rule="evenodd" />
+                </svg>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-black text-yellow-600 mb-2 text-glow">
+                STOP GIFT CARD WASTE!
+            </h1>
+            <p class="text-red-600 text-lg md:text-xl font-extrabold border-b-2 border-red-200 pb-3">
+                That Remaining Balance = Creative Fuel!
             </p>
         </div>
 
-        <!-- Call to Action -->
-        <div class="space-y-4 mb-8">
-            <p class="text-gray-700">
-                Choose your preferred service below. All major credit cards, as well as <strong>Visa, Mastercard, or Amex gift cards</strong>, are accepted through these trusted platforms.
+        <!-- Over-the-Top Content -->
+        <div class="space-y-6 mb-8 border-t border-b border-gray-100 py-6 bg-yellow-50 rounded-lg p-4 shadow-inner">
+            <p class="text-gray-900 text-lg font-bold">
+                Don't let that **forgotten $2.50 or $7.13** gather digital dust! 
             </p>
+            <p class="text-gray-700">
+                It's the exact energy I need to **cover a crucial subscription, buy a necessary asset, or power through the next 48-hour creative sprint!** <strong class="text-yellow-600">Turn that waste into WONDER!</strong>
+            </p>
+
+            <h3 class="text-2xl font-extrabold text-indigo-700 mt-6">HOW IT WORKS:</h3>
 
             <!-- PayPal Button -->
             <a 
-                href="https://paypal.me/DRILSGT"  
+                href="https://paypal.me/YOUR_PAYPAL_USERNAME"  
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="block w-full paypal-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+                class="block w-full paypal-btn text-white font-black py-4 px-6 rounded-xl text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-[1.03] active:scale-[0.98] drop-shadow-lg border-b-4 border-blue-900"
             >
                 <!-- TODO: IMPORTANT - Replace 'YOUR_PAYPAL_USERNAME' above with your actual PayPal.me link -->
-                Pay with PayPal
+                POWER UP with PayPal
             </a>
 
             <!-- Venmo Button -->
             <a 
-                href="https://venmo.com/code?user_id=2745502009393152142&created=1763236672"  
+                href="https://venmo.com/YOUR_VENMO_USERNAME"  
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="block w-full venmo-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+                class="block w-full venmo-btn text-white font-black py-4 px-6 rounded-xl text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-[1.03] active:scale-[0.98] drop-shadow-lg border-b-4 border-blue-800"
             >
                 <!-- TODO: IMPORTANT - Replace 'YOUR_VENMO_USERNAME' above with your actual Venmo link -->
-                Pay with Venmo
+                IGNITE with Venmo
             </a>
 
             <!-- Cash App Button -->
             <a 
-                href="https://cash.app/$AnthonyGilbert"  
+                href="https://cash.app/$YOUR_CASHTAG"  
                 target="_blank" 
                 rel="noopener noreferrer"
-                class="block w-full cashapp-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+                class="block w-full cashapp-btn text-white font-black py-4 px-6 rounded-xl text-xl shadow-xl transition duration-300 ease-in-out transform hover:scale-[1.03] active:scale-[0.98] drop-shadow-lg border-b-4 border-green-800"
             >
                 <!-- TODO: IMPORTANT - Replace '$YOUR_CASHTAG' above with your actual Cash App $cashtag -->
-                Pay with Cash App
+                ACTIVATE via Cash App
             </a>
 
 
-            <p class="text-xs text-gray-500 pt-2">
-                You will be redirected to a secure payment page for the service you choose.
+            <p class="text-sm text-gray-500 pt-3">
+                You will be redirected to a secure payment page.
             </p>
         </div>
 
         <!-- FAQ Section -->
-        <div class="border-t border-gray-200 pt-6">
-            <h2 class="text-xl font-semibold text-gray-800 mb-4">How This Works</h2>
+        <div class="pt-6">
+            <h2 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Yes, It Really Works!</h2>
             <div class="text-left space-y-3 text-gray-600">
                 <p>
-                    <strong class="text-gray-700">1. Click a Button:</strong> You'll go to my secure page on PayPal, Venmo, or Cash App.
+                    <strong class="text-gray-700">1. Select & Go:</strong> Click one of the high-octane buttons above.
                 </p>
                 <p>
-                    <strong class="text-gray-700">2. Enter the Amount:</strong> Choose the amount you'd like to send.
+                    <strong class="text-gray-700">2. Enter Card Details:</strong> When prompted for payment, enter your Visa, Mastercard, or Amex gift card number, just like a debit card.
                 </p>
                 <p>
-                    <strong class="text-gray-700">3. Pay Securely:</strong> Use your Visa/Mastercard gift card just like a regular credit card to complete the payment.
+                    <strong class="text-gray-700">3. Mission Accomplished:</strong> The balance is sent, the gift card is emptied, and my creativity is fueled!
                 </p>
             </div>
         </div>
 
         <!-- Security Footer -->
-        <div class="mt-8 text-xs text-gray-400">
+        <div class="mt-8 text-xs text-gray-500 border-t pt-4">
             <p>
-                🔒 I never see or store your financial information. All transactions are handled by a secure, PCI-compliant payment processor.
+                🛑 <strong class="text-red-500">I DO NOT ASK FOR CARD NUMBERS HERE.</strong> 🛑 All transactions are securely processed by the payment platform you choose. Your financial safety is paramount.
             </p>
         </div>
 
