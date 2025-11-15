@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support My Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+        /* Custom styles for button colors */
+        .paypal-btn { background-color: #0070ba; }
+        .paypal-btn:hover { background-color: #005ea6; }
+        .venmo-btn { background-color: #008cff; }
+        .venmo-btn:hover { background-color: #0077e6; }
+        .cashapp-btn { background-color: #00c43c; }
+        .cashapp-btn:hover { background-color: #00a833; }
+    </style>
+</head>
+<body class="gradient-bg flex items-center justify-center min-h-screen p-6">
+    <div class="bg-white w-full max-w-md mx-auto rounded-xl shadow-2xl p-8 md:p-10 text-center overflow-hidden">
+        
+        <!-- Header -->
+        <div class="mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-3">Support My Work</h1>
+            <p class="text-gray-600 text-base md:text-lg">
+                Have a remaining balance on a gift card? You can use it to send a tip!
+            </p>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="space-y-4 mb-8">
+            <p class="text-gray-700">
+                Choose your preferred service below. All major credit cards, as well as <strong>Visa, Mastercard, or Amex gift cards</strong>, are accepted through these trusted platforms.
+            </p>
+
+            <!-- PayPal Button -->
+            <a 
+                href="https://paypal.me/DRILSGT"  
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="block w-full paypal-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+            >
+                <!-- TODO: IMPORTANT - Replace 'YOUR_PAYPAL_USERNAME' above with your actual PayPal.me link -->
+                Pay with PayPal
+            </a>
+
+            <!-- Venmo Button -->
+            <a 
+                href="https://venmo.com/code?user_id=2745502009393152142&created=1763236672"  
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="block w-full venmo-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+            >
+                <!-- TODO: IMPORTANT - Replace 'YOUR_VENMO_USERNAME' above with your actual Venmo link -->
+                Pay with Venmo
+            </a>
+
+            <!-- Cash App Button -->
+            <a 
+                href="https://cash.app/$AnthonyGilbert"  
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="block w-full cashapp-btn text-white font-bold py-3 px-6 rounded-lg text-lg shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-0.5"
+            >
+                <!-- TODO: IMPORTANT - Replace '$YOUR_CASHTAG' above with your actual Cash App $cashtag -->
+                Pay with Cash App
+            </a>
+
+
+            <p class="text-xs text-gray-500 pt-2">
+                You will be redirected to a secure payment page for the service you choose.
+            </p>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="border-t border-gray-200 pt-6">
+            <h2 class="text-xl font-semibold text-gray-800 mb-4">How This Works</h2>
+            <div class="text-left space-y-3 text-gray-600">
+                <p>
+                    <strong class="text-gray-700">1. Click a Button:</strong> You'll go to my secure page on PayPal, Venmo, or Cash App.
+                </p>
+                <p>
+                    <strong class="text-gray-700">2. Enter the Amount:</strong> Choose the amount you'd like to send.
+                </p>
+                <p>
+                    <strong class="text-gray-700">3. Pay Securely:</strong> Use your Visa/Mastercard gift card just like a regular credit card to complete the payment.
+                </p>
+            </div>
+        </div>
+
+        <!-- Security Footer -->
+        <div class="mt-8 text-xs text-gray-400">
+            <p>
+                🔒 I never see or store your financial information. All transactions are handled by a secure, PCI-compliant payment processor.
+            </p>
+        </div>
+
+    </div>
+
+</body>
+</html>
